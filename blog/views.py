@@ -29,7 +29,7 @@ class RecipeDetail(View):
             {
                 'recipe': recipe,
                 'comments': comments,
-                'liked': liked
-                'comment_form': CommentForm()
+                'liked': liked,
+                'comment_form': CommentForm(),
             },
         )
