@@ -50,6 +50,12 @@ a {
     position: relative;
 }
 
+.square {
+    object-fit: cover;
+    width: 15rem;
+    height: 15rem;
+}
+
 .image-flash {
     position: absolute;
     top: 1%;
