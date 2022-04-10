@@ -44,19 +44,19 @@
                                 {% if liked %}
 
                                 <button class="btn-like" type="submit" name="blogpost_id" value="{{recipe.slug}}">
-                                    <i class="fa-solid fa-fork"></i>
+                                    <i class="fas fa-heart"></i>
                                 </button>
 
                                 {% else %}
 
                                 <button class="btn-like" type="submit" name="blogpost_id" value="{{recipe.slug}}">
-                                    <i class="fa-thin fa-fork"></i>
+                                    <i class="far fa-heart"></i>
                                 </button>
 
                                 {% endif %}
                             </form>
                             {% else %}
-                            <span class="text-secondary"><i class="fa-thin fa-fork"></i></span>
+                            <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
                             <span class="text-secondary">{{ recipe.number_of_likes }}</span>
                         </strong>
