@@ -1,0 +1,139 @@
+/* General */
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #fd8b8b;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg {
+    background-color: #ff5c5c;
+}
+
+/* Navigation */
+.nav-link {
+    color: #8b0000;
+}
+
+.brand {
+    font-family: 'Righteous', cursive;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.thin {
+    font-weight: 300;
+    color: #fffc48;
+}
+
+/* Recipe Index */
+.main-bg {
+    background-color: #ffffff;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #8b0000;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    top: 1%;
+    min-width: 30%;
+    right: -.13rem;
+    background-color: #f4ff93af;
+}
+
+.author {
+    color: #8b0000;
+    margin: .25rem;
+    text-transform: capitalize;
+}
+
+/* Recipe Detail */
+.masthead {
+    margin-top: 1rem;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 33vh;
+    width: 100%;
+}
+
+.masthead-text {
+    background-color: #ff5c5c;
+    color: #fffc48;
+    position: relative;
+}
+
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 85%;
+    height: 150%;
+    width: 150%;
+    border-radius: 50%;
+    background: #ff5c5c;
+    z-index: 100;
+}
+
+.post-title {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: lightgray;
+}
+
+/* Buttons */
+.btn-signup {
+    background-color: #8b0000;
+    color: #fffc48;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fffc48;
+    color: #8b0000;
+}
+
+.btn-like {
+    color: #E84610;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #E84610;
+    background: transparent;
+    border: none;
+}
+
+/* Footer */
+.footnote {
+    font-size: .9rem;
+    color: #8b0000;
+}

@@ -6,11 +6,11 @@
     <div class="row">
 
         <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
+        <div class="col-12 mt-3 shadow-lg left">
             <div class="row">
                 {% for recipe in recipe_list %}
                 <div class="col-md-4">
-                    <div class="card mb-4">
+                    <div class="card rounded text-center shadow mb-4">
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in recipe.featured_image.url %}
@@ -19,7 +19,7 @@
                                 {% else %}
                                 <img class="card-img-top" src=" {{ recipe.featured_image.url }}">
                                 {% endif %}
-                                <div class="image-flash">
+                                <div class="rounded image-flash">
                                     <p class="author">Author: {{ recipe.author }}</p>
                                 </div>
                             </div>
@@ -41,6 +41,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Pagination -->
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
