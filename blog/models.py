@@ -28,7 +28,7 @@ class Recipe(models.Model):
 
 # usable model for comment creation
 class Comment(models.Model):
-    post = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='comments')
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='comments')
     name = models.CharField(max_length=60)
     email = models.EmailField()
     body = models.TextField()
