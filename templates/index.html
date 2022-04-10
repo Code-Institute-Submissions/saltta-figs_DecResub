@@ -14,10 +14,15 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in recipe.featured_image.url %}
-                                <img class="card-img-top square"
-                                    src="https://res.cloudinary.com/saltta/image/upload/v1649568477/placeholder-recipe-image_mpdufj.jpg" alt="Person in the kitchen">
+                                <a href="{% url 'recipe_detail' recipe.slug %}">
+                                    <img class="card-img-top square"
+                                        src="https://res.cloudinary.com/saltta/image/upload/v1649568477/placeholder-recipe-image_mpdufj.jpg"
+                                        alt="Person in the kitchen">
+                                </a>
                                 {% else %}
-                                <img class="card-img-top square" src=" {{ recipe.featured_image.url }}">
+                                <a href="{% url 'recipe_detail' recipe.slug %}">
+                                    <img class="card-img-top square" src=" {{ recipe.featured_image.url }}">
+                                </a>
                                 {% endif %}
                                 <div class="rounded image-flash">
                                     <p class="author">Author: {{ recipe.author }}</p>
