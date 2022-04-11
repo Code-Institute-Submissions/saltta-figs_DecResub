@@ -9,7 +9,7 @@ This is the fourth project for Code Institute's Diploma in Software Development 
 It uses HTML, CSS, JavaScript and Python, along with Django and Bootstrap.
 
 
-![Main Page](./media/main.png)
+![Main Page](./media/homepage.png)
 
 You can find the live page on Heroku by [clicking here](https://thefigs.herokuapp.com/).
 
@@ -110,4 +110,70 @@ Register and login pages are similar in format
 Logout confirmation page
 
 ![logout phone](./media/New%20Project%201/phone-logout.png)
+
+### Surface Plane
+
+**Design**
+
+The layout of the website is functional and simple to navigate. It minimizes the amount of time the user has to worry about looking for links, the navbar should clearly displayed and accessible. The recipes should be clearly presented, organized and easy to click to read more. 
+
+The colour choice was based on the knowledge that warmer tones like yellow and red are appropriate for food themes. A more pastel shade of those colours should also bring calmness and less irritation than more vibrant colours.
+
+![colours](./media/colorscheme.png)
+
+**Images**
+
+The images should represent the recipe, its ingredients or the act of cooking itself. They are sourced from free stock image websites. 
+
+## Features
+
+### Navigation 
+
+The navigation bar sits permanently at the top giving the user the option to go to the home page, register, login or logout.
+
+First time or unregistered users:
+
+![navbar](./media/navbar.png)
+
+When logged in:
+
+![logged in navbar](./media/logged.png)
+
+Mobile users have a different view of the navbar, it has a typical burger menu button:
+
+![mobile navbar closed](./media/mobilenav1.png)
+
+Mobile when opened:
+
+![mobile navbar open](./media/mobilenav2.png)
+
+The homepage holds the recipe index where users can click on the title or image to open the page with more details about the selected recipe:
+
+![recipe index](./media/recipeindex.png)
+
+The site is automatically paginated as more recipes are added to it. There are six recipes displayed per index page. Newer ones will be shown at the beginning and older ones get moved to the following pages.
+
+Pagination:
+
+![pagination](./media/pagination.png)
+
+Older recipes on later pages:
+
+![following pages pagination](./media/pagination2.png)
+
+The footer holds links to social media sites:
+
+![footer](./media/footer.png)
+
+The registration page is where users can create an account to be able to post comments and like recipes, the will need a username, email(optional), and password. It will also ask them to login if they already have an account, and provide a link to it:
+
+![registration](./media/signup.png)
+
+The login page will ask for the returning user's credentials. It will also give a new user a message and a link to signup in case they are in the wrong page:
+
+![login](./media/login.png)
+
+The logout page will ask for the user's confirmation of logging out with a button:
+
+![logout](./media/logout.png)
 
