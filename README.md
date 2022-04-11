@@ -60,9 +60,9 @@ The Figs is a blog website intended for users to get inspired by new recipes and
 4. View likes
 5. View comments
 6. Account registration
-7. Comment on a post
+7. Comment on a recipe
 8. Like / unlike
-9. Manage posts
+9. Manage recipes
 10. Create Drafts
 11. Approve comments
 
@@ -128,7 +128,7 @@ The Figs is a blog website intended for users to get inspired by new recipes and
 
 * A visitor can use link in the navigation bar to go to the registration page where they'll be prompted to provide username, email(optional) and password to create login credentials
 
->7. Comment on a post
+>7. Comment on a recipe
 
 * Only registered users are capable of commenting on a post, the comment box is only visible and usable after being logged in
 
