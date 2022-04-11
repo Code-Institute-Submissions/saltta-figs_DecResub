@@ -306,5 +306,35 @@ Here is the bug:
 
 It was solved by adding a specific Bootstrap class called ```nav-light```.
 
+## Technologies
+
+- Python - Libraries
+- Django - Main framework
+- HTML - Base templates
+- CSS - Custom styling
+- JavaScript - Code to make temporary message
+- Font Awesome - Lemon like button and comment counter
+- Bootstrap - Layout
+- Heroku - Deployment
+- Heroku PostgreSQL - Database
+
+Multiple python libraries were used and they are listed in the [requirements.txt](https://github.com/saltta/figs/blob/main/requirements.txt).
+
+**Packages**
+
+- Gitpod - Writing, editing and pushing code
+- GitHub - Holds the project
+- Balsamiq - Wireframes
+
+**Resources**
+
+- Code Institute walkthrough
+- Django documentation
+- W3Schools
+- Bootstrap documentation
+- Blogs
+- Stack Overflow
+
+
 
 
