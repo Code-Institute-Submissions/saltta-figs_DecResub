@@ -95,6 +95,7 @@ The Figs is a blog website intended for users to get inspired by new recipes and
 ![Recipe Model](./media/recipe%20model.jpg)
 
 #### *post was later changed to recipe:*
+
 ![Comment Model](./media/comment%20model.jpg)
 
 ### Skeleton Plane
@@ -110,12 +111,15 @@ Home page - where the user should find the recipes along with a navbar and foote
 Recipe - where the user can read the recipe and leave a comment and like if registered
 
 Not logged in, the comment box isn't visible:
+
 ![recipe desktop not logged in](./media/New%20Project%201/recipe-notlog.png)
 
 Logged in, the comment box should be visible:
+
 ![recipe desktop logged in](./media/New%20Project%201/recipe-log.png)
 
 Phone recipe page:
+
 ![phone recipes](./media/New%20Project%201/phone-recipe.png)
 
 Register and login pages are similar in format
