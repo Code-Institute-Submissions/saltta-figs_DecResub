@@ -226,3 +226,85 @@ The CSS was valid but 236 warnings were raised due to Bootstrap and Font Awesome
 
 Errors were checked for in python during writing as they would be pointed out in Gitpod's console. Also the errors shown on the local server while DEBUG was set to True in the project's *settings.py* file.
 
+A number of manual tests were completed to be sure that the app was functioning according to plan as well as to see if the responsiveness was working.
+
+All tests were performed on Desktop and Mobile devices.
+
+**Navbar / Footer**
+
+- Navbar appearance and functionality
+- Navbar links
+- Navbar link status depending on login/logout
+- Footer links
+
+**Index**
+
+- Content is visible and understandable
+- Placement of cards in the index
+- Pagination - automatic generation and next/previous buttons
+- Clicking a recipe card would link to the correct page
+
+**Recipe**
+
+- Recipe detail page layout
+- Order and placement of content
+- Like and comment counters
+- Comments display
+- Comment box visibility only logged in
+- Message of awaiting approval after comment submission
+
+**Registration**
+
+- Register page layout
+- Username, email and password fields work
+- Register button works
+- Message and link to login work
+- Redirects to home page with temporary message below navbar
+
+**Login**
+
+- Login page layout
+- Username and password fields displayed and working
+- Login button working
+- Message and link to register work
+- Redirects to home page with temporary message below navbar
+
+**Logout**
+
+- Logout page display
+- Logout message visible
+- Logout button works
+- Redirects to home page with temporary message below navbar
+
+**Browser**
+
+- Chrome
+- Firefox
+- Safari
+
+I also ran the main page through Chrome's lighthouse to have an evaluation.
+
+This is for the desktop version of the site:
+
+![lighthouse desktop](./media/lighthousedesktop.png)
+
+And mobile version of the site:
+
+![lighthouse mobile](./media/lighthousemobile.png)
+
+### Bugs
+
+Most bugs were typing errors that were immediately corrected. The most difficult part to me was navigating Bootstrap and my own CSS file. 
+
+I used a lot of the Bootstrap documentation to try and achieve what I wanted but still had to rely on CSS for more custom things.
+
+The most notable bug i encountered was the fact that the burger menu button for mobile devices became invisible. It took me the longest to solve and I relied on a lot of trial and error along with using Bootstrap documentation and Stack Overflow.
+
+Here is the bug:
+
+![mobile navbar bug](./media/navbar%20bug.png)
+
+It was solved by adding a specific Bootstrap class called ```nav-light```.
+
+
+
