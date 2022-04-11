@@ -56,3 +56,30 @@ The Figs is a blog website intended for users to get inspired by new recipes and
 - Recipes - any user can access and read recipes
 - Registration - links for the users to register, login and logout
 - Comments - comments need to be approved before being displayed
+
+### Structure Plane
+
+**Pages**
+
+- The site contains a main page showing the recently added recipes, more pages are created after the limit of 6 recipe cards are displayed
+- There a page for each recipe that gets added, where comments can be made
+- There are registration, login and logout pages
+
+**Code**
+
+- The site uses one app called blog
+- It was built using Django
+- It uses templates
+
+**Database**
+
+- The site uses PostgreSQL on Heroku
+
+#### Database Plan:
+
+![Recipe Model](./media/recipe%20model.jpg)
+
+#### post was later changed to recipe:
+![Comment Model](./media/comment%20model.jpg)
+
+
