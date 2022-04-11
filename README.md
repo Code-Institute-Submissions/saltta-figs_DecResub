@@ -147,7 +147,7 @@ Mobile when opened:
 
 ![mobile navbar open](./media/mobilenav2.png)
 
-The homepage holds the recipe index where users can click on the title or image to open the page with more details about the selected recipe:
+The homepage holds the recipe index where users can click on the title or image to open the page with more details about the selected recipe. The cards in the index contain a photo, title, author's name, an excerpt, date it was created and number of likes:
 
 ![recipe index](./media/recipeindex.png)
 
@@ -176,4 +176,30 @@ The login page will ask for the returning user's credentials. It will also give 
 The logout page will ask for the user's confirmation of logging out with a button:
 
 ![logout](./media/logout.png)
+
+When a user registers/logs in or logs out, a message will be displayed at the top of the recipe index and beneath the navbar indicating their status:
+
+![login/logout message](./media/message.png)
+
+The recipe's detail page contains a title with an image, the author's name and date it was created on. It also has a brief intro followed by the ingredients and steps to prepare:
+
+![recipe page](./media/recipe.png)
+
+Beneath the recipe's steps, there is a like and comment counter. When the logged in user has already liked a recipe he will see it in solid red colour:
+
+![like and comment counter](./media/likecounter.png)
+
+The comment section is displayed at the bottom left of the recipe detail page. Comments are only shown after admin approval, but once approved anyone can see them. It includes the user's username, time of writing and the comment itself:
+
+![comment section](./media/commentsection.png)
+
+To leave a comment a user will need to be registered and logged in otherwise they will not have the option to do so as they won't see this comment box. Above the box the user can see his username and a submit button at the bottom:
+
+![leave a comment box](./media/leavecomment.png)
+
+Once submitted, the comment still needs approval by the admin. The user will be notified that their comment is still pending the approval with a message where the comment box used to be:
+
+![waiting approval](./media/commentapproval.png)
+
+
 
