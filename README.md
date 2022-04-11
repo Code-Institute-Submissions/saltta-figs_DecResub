@@ -55,4 +55,4 @@ The Figs is a blog website intended for users to get inspired by new recipes and
 - User Interaction - users need to register in order to comment and like posts
 - Recipes - any user can access and read recipes
 - Registration - links for the users to register, login and logout
-- Comments - comments need to be approved before being dislayed
+- Comments - comments need to be approved before being displayed
