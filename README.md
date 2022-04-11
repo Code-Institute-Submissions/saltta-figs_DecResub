@@ -7,3 +7,8 @@ The Figs is a web blog made using Django as a portfolio project for Code Institu
 This is the fourth project for Code Institute's Diploma in Software Development with eCommerce. 
 
 It uses HTML, CSS, JavaScript and Python, along with Django and Bootstrap.
+
+![Main Page](./media/main.png)
+
+You can find the live page on Heroku by [clicking here](https://thefigs.herokuapp.com/).
+
