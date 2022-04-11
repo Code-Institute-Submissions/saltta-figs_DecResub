@@ -26,6 +26,10 @@ You can find the live page on Heroku by [clicking here](https://thefigs.herokuap
 * [Technologies Used](#technologies)
 * [Testing](#tests)
 * [Deployment](#deployment)
+    * [Developing](#developing)
+    * [Cloudinary Hosting](#cloudinary-hosting)
+    * [Deploying to Heroku](#deploying-to-heroku)
+    * [Forking GitHub Repository](#forking-github-repository)
 * [Credits](#credits)
 
 ## UX
