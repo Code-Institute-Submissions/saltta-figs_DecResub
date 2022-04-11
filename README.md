@@ -47,3 +47,12 @@ The Figs is a blog website intended for users to get inspired by new recipes and
 10. Create Drafts
 11. Approve comments
 
+### Scope Plane
+
+**Features**
+
+- Responsive Design - easy to access and view on multiple devices
+- User Interaction - users need to register in order to comment and like posts
+- Recipes - any user can access and read recipes
+- Registration - links for the users to register, login and logout
+- Comments - comments need to be approved before being dislayed
