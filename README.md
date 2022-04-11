@@ -13,6 +13,21 @@ It uses HTML, CSS, JavaScript and Python, along with Django and Bootstrap.
 
 You can find the live page on Heroku by [clicking here](https://thefigs.herokuapp.com/).
 
+## Table of Contents
+
+* [User Experience](#ux)
+    * [Strategy Plane](#strategy-plane)
+    * [Scope Plane](#scope-plane)
+    * [Structure Plane](#structure-plane)
+    * [Skeleton Plane](#skeleton-plane)
+    * [Surface Plane](#surface-plane)
+* [Features](#features)
+    * [Future Features](#future-features)
+* [Technologies Used](#technologies)
+* [Testing](#tests)
+* [Deployment](#deployment)
+* [Credits](#credits)
+
 ## UX
 
 ### Strategy Plane
