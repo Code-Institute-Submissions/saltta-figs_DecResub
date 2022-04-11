@@ -330,11 +330,11 @@ Multiple python libraries were used and they are listed in the [requirements.txt
 **Resources**
 
 - Code Institute walkthrough
-- Django documentation
-- W3Schools
-- Bootstrap documentation
-- Blogs
-- Stack Overflow
+- [Django documentation](https://www.djangoproject.com/)
+- [W3Schools](https://www.w3schools.com/)
+- [Bootstrap documentation](https://getbootstrap.com/)
+- [Stack Overflow](https://stackoverflow.com/)
+- Articles
 
 ## Deployment
 
@@ -379,5 +379,35 @@ Heroku is used to deploy the website. [The Figs](https://thefigs.herokuapp.com/)
 1. Log in to GitHub and locate [my GitHub Repository](https://github.com/saltta/figs)
 2. At the top of the Repository, click the "Fork" button.
 3. You should now have a copy of the original repository in your GitHub account.
+
+## Credits
+
+### Walkthrough
+
+The walkthrough I followed is part of the course for Software Developer at [Code Institute](https://codeinstitute.net/).
+
+### Media and Design
+
+Sources of images, fonts, colour schemes
+
+- [Pexels](https://www.pexels.com/)
+- [Unsplash](https://unsplash.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [ColorHexa](https://www.colorhexa.com/)
+- [Font Awesome](https://fontawesome.com/)
+
+### Recipes
+
+For the recipes I used other cooking websites
+
+- [Jamie Oliver](https://www.jamieoliver.com/)
+- [BBC goodfood](https://www.bbcgoodfood.com/)
+
+### Code
+
+When searching for solutions I went through documentations, articles and forums
+
+- [Django Central](https://djangocentral.com/)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/)
 
 
