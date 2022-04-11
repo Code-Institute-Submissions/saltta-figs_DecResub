@@ -21,7 +21,7 @@
                                 </a>
                                 {% else %}
                                 <a href="{% url 'recipe_detail' recipe.slug %}">
-                                    <img class="card-img-top square" src=" {{ recipe.featured_image.url }}">
+                                    <img class="card-img-top square" src=" {{ recipe.featured_image.url }}" alt="Food Image">
                                 </a>
                                 {% endif %}
                                 <div class="rounded image-flash">
