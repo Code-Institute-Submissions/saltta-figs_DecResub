@@ -201,5 +201,28 @@ Once submitted, the comment still needs approval by the admin. The user will be 
 
 ![waiting approval](./media/commentapproval.png)
 
+### Future Features
 
+- Create user profile pages
+- Allow users to share recipes
+- Allow users to save their favorite recipes to their profile
+- Switch from blog to a more social community website
+
+## Tests
+
+**Validators**
+
+Validators were used to check the HTML, CSS and JavaScript part of the code.
+
+HTML:
+
+![html validator](./media/html-valid.png)
+
+CSS:
+
+![css validator](./media/css-valid-236warnings.png)
+
+The CSS was valid but 236 warnings were raised due to Bootstrap and Font Awesome.
+
+Errors were checked for in python during writing as they would be pointed out in Gitpod's console. Also the errors shown on the local server while DEBUG was set to True in the project's *settings.py* file.
 
