@@ -168,11 +168,13 @@ Mobile when opened:
 
 The homepage holds the recipe index where users can click on the title or image to open the page with more details about the selected recipe. The cards in the index contain a photo, title, author's name, an excerpt, date it was created and number of likes:
 
+### Recipe Index
+
 ![recipe index](./media/recipeindex.png)
 
 The site is automatically paginated as more recipes are added to it. There are six recipes displayed per index page. Newer ones will be shown at the beginning and older ones get moved to the following pages.
 
-Pagination:
+### Pagination
 
 ![pagination](./media/pagination.png)
 
@@ -180,41 +182,61 @@ Older recipes on later pages:
 
 ![following pages pagination](./media/pagination2.png)
 
+### Footer
+
 The footer holds links to social media sites:
 
 ![footer](./media/footer.png)
+
+### Registration
 
 The registration page is where users can create an account to be able to post comments and like recipes, the will need a username, email(optional), and password. It will also ask them to login if they already have an account, and provide a link to it:
 
 ![registration](./media/signup.png)
 
+### Login
+
 The login page will ask for the returning user's credentials. It will also give a new user a message and a link to signup in case they are in the wrong page:
 
 ![login](./media/login.png)
+
+### Logout
 
 The logout page will ask for the user's confirmation of logging out with a button:
 
 ![logout](./media/logout.png)
 
+### Status Temporary Message
+
 When a user registers/logs in or logs out, a message will be displayed at the top of the recipe index and beneath the navbar indicating their status:
 
 ![login/logout message](./media/message.png)
+
+### Recipe Page
 
 The recipe's detail page contains a title with an image, the author's name and date it was created on. It also has a brief intro followed by the ingredients and steps to prepare:
 
 ![recipe page](./media/recipe.png)
 
+### Like / Comments Counter
+
 Beneath the recipe's steps, there is a like and comment counter. When the logged in user has already liked a recipe he will see it in solid red colour:
 
 ![like and comment counter](./media/likecounter.png)
+
+### Comment Section
 
 The comment section is displayed at the bottom left of the recipe detail page. Comments are only shown after admin approval, but once approved anyone can see them. It includes the user's username, time of writing and the comment itself:
 
 ![comment section](./media/commentsection.png)
 
+### Leave Comment
+
 To leave a comment a user will need to be registered and logged in otherwise they will not have the option to do so as they won't see this comment box. Above the box the user can see his username and a submit button at the bottom:
 
 ![leave a comment box](./media/leavecomment.png)
+
+### Comment Approval
 
 Once submitted, the comment still needs approval by the admin. The user will be notified that their comment is still pending the approval with a message where the comment box used to be:
 
