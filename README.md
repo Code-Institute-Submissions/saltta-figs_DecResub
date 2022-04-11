@@ -325,6 +325,7 @@ Multiple python libraries were used and they are listed in the [requirements.txt
 - Gitpod - Writing, editing and pushing code
 - GitHub - Holds the project
 - Balsamiq - Wireframes
+- Cloudinary - Image hosting
 
 **Resources**
 
@@ -335,6 +336,48 @@ Multiple python libraries were used and they are listed in the [requirements.txt
 - Blogs
 - Stack Overflow
 
+## Deployment
 
+Heroku is used to deploy the website. [The Figs](https://thefigs.herokuapp.com/)
+
+### Developing
+
+1. Create a new repository on GitHub using Code Institute's [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
+1. Open the repository you just created and from there you can:
+    * Create a workspace by prefixing any GitHub URL with gitpod.io/#, or
+    * By using Gitpod browser extension, it adds a button to GitHub.
+1. Through Gitpod you will push your commits straight to GitHub.
+
+### Cloudinary Hosting
+
+1. Create an account on [Cloudinary](https://cloudinary.com/)
+2. Click on signup for free
+3. Fill out the form and click create an account
+4. Confirm via the link in your email
+5. Access your dashboard on Cloudinary
+
+### Deploying to Heroku
+
+1. Create an account on [Heroku](https://www.heroku.com/)
+2. Create an app, in my case *thefigs* and select a region
+3. Under resources search for postgres and add a Postgres database to the app, I used Heroku Postgres
+4. Set DATABASE_URL as an environment variable in Heroku's settings by clicking on config vars, and your local environment variables#
+5. Log into Cloudinary, go to dashboard and copy your CLOUDINARY_URL
+6. Make sure to add to your environment variables as well
+5. Create a file called Procfile and write ```web: gunicorn <PROJECT_NAME>wsgi```
+6. Add enviroment variables to Heroku's Config Vars
+7. In your project's settings.py ensure the connection is to the Heroku Postgres database
+8. Make sure DEBUG is set to false in the settings.py file, this is very important to remember before final deployment
+9. Add 'localhost', and '<PROJECT_NAME>.herokuapp.com' to the ALLOWED_HOSTS variable in settings.py
+11. Run ```python3 manage.py migrate``` in the terminal to migrate the database
+12. Run ```python3 manage.py createsuperuser``` to create a super admin user
+13. In the deploy tab in Heroku, connect the app to GitHub
+14. Scroll down and click deploy branch to deploy your application to Heroku
+
+### Forking GitHub Repository
+
+1. Log in to GitHub and locate [my GitHub Repository](https://github.com/saltta/figs)
+2. At the top of the Repository, click the "Fork" button.
+3. You should now have a copy of the original repository in your GitHub account.
 
 
