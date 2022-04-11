@@ -55,8 +55,8 @@ The Figs is a blog website intended for users to get inspired by new recipes and
 *These were suggested in the walkthrough.*
 
 1. Site pagination
-2. View post list
-3. Open a post
+2. View recipe list
+3. Open a recipe
 4. View likes
 5. View comments
 6. Account registration
@@ -101,6 +101,52 @@ The Figs is a blog website intended for users to get inspired by new recipes and
 #### *post was later changed to recipe:*
 
 ![Comment Model](./media/comment%20model.jpg)
+
+**Implementing User Stories**
+
+>1. Site pagination
+
+* The index shows 6 recipe cards at once, more than that and it creates a new page with next/previous buttons to navigate at the bottom center of the index
+
+>2. View recipe list
+
+* Any site user has access to the main page which holds the index of recipes
+
+>3. Open a recipe
+
+* The images and titles on the recipe cards in the index are clickable leading to the recipe detail page
+
+>4. View likes
+
+* The number of likes a recipe has received is visible on its card and at the bottom of the recipe on its detail page
+
+>5. View comments
+
+* Any user can see the comments posted by registered users underneath the recipe in its detail page
+
+>6. Account registration
+
+* A visitor can use link in the navigation bar to go to the registration page where they'll be prompted to provide username, email(optional) and password to create login credentials
+
+>7. Comment on a post
+
+* Only registered users are capable of commenting on a post, the comment box is only visible and usable after being logged in
+
+>8. Like / unlike
+
+* Logged in users can like recipes, they click on the small lemon image at the bottom of the recipe to indicate they liked it, adding to the counter, the lemon then becomes fully colored in red to indicate to that user that they have already liked that recipe
+
+>9. Manage recipes
+
+* As a site admin I can have full access to the website, I am allowed to do everything a visitor can do plus add new recipes as well as delete old ones, I control the contents of the blog
+
+>10. Create Drafts
+
+* As admin I can create drafts and keep them saved without having to add them to the index, that way I can finish writing the recipe later
+
+>11. Approve comments
+
+* As the admin I have the option to approve comments before they are posted and visible to other users, that way I can filter to make sure nothing inappropriate is being posted
 
 ### Skeleton Plane
 
