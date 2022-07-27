@@ -18,7 +18,7 @@
                 {% else %}
                 <img src="{{ recipe.featured_image.url }}" width="100%">
                 {% endif %}
-            </div>
+            </div> 
         </div>
     </div>
 </div>
@@ -93,6 +93,9 @@
                     </p>
                     {{ comment.body | linebreaks }}
                 </div>
+                <!-- {% if user.username == comment.name or user.is_superuser %}
+                <a href="{% url 'edit_comment' recipe.slug %}">Edit</a>
+                {% endif %} -->
                 {% endfor %}
             </div>
         </div>
@@ -116,6 +119,12 @@
                     <br>
                     <button type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
+                {% else %}
+                <div class="card-body text-center">
+                    <p>Please sign in or register to leave a comment</p>
+                    <a href="{% url 'account_signup' %}" class="btn btn-signup">Register</a>
+                    <a href="{% url 'account_login' %}" class="btn btn-signup">Login</a>
+                </div>
                 {% endif %}
                 {% endif %}
             </div>
