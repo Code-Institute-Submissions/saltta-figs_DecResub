@@ -1,9 +1,34 @@
+from django.contrib.auth.models import User
+from django.contrib import messages
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
+from django.views.generic import ListView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.messages.views import SuccessMessageMixin
+from django.urls import reverse_lazy
 from django.http import HttpResponseRedirect
 from .models import Recipe
-from .forms import CommentForm
+from .forms import CommentForm, RecipeForm
+import datetime
 
+class AddRecipe(SuccessMessageMixin, LoginRequiredMixin, CreateView):
+
+    model = Recipe
+    form_class = RecipeForm
+    template_name = 'add_recipe.html'
+
+    login_url = '/accounts/login/'
+    redirect_field_name = 'account_login'
+    success_message = "Your recipe was added successfully"
+
+    def get_success_url(self):
+        return reverse_lazy('recipe_detail', kwargs={'slug': self.object.slug})
+
+    def get_initial(self, *args, **kwargs):
+        initial = super().get_initial(**kwargs)
+        initial['author'] = self.request.user
+        return initial
 
 # view for the recipe list
 class RecipeList(generic.ListView):
@@ -67,6 +92,7 @@ class RecipeDetail(View):
                 'comment_form': CommentForm(),
             },
         )
+
 
 # creates ability to add or remove like from recipes
 class RecipeLike(View):
