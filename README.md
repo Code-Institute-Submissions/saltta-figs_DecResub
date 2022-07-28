@@ -385,6 +385,8 @@ And mobile version of the site:
 
 ### Bugs
 
+Could not get Add Recipe to work.
+
 Most bugs were typing errors that were immediately corrected. The most difficult part to me was navigating Bootstrap and my own CSS file. 
 
 I used a lot of the Bootstrap documentation to try and achieve what I wanted but still had to rely on CSS for more custom things.
