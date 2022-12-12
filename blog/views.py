@@ -106,3 +106,25 @@ class RecipeLike(View):
             recipe.likes.add(request.user)
         
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
+
+
+class RecipeEditView(UpdateView):
+    """
+    Edit recipe
+    """
+    model = Recipe
+    form_class = RecipeForm
+    template_name_suffix = '_update_form'
+    template_name = 'recipe_update_form.html'
+    success_url = '/'
+
+
+class RecipeDeleteView(DeleteView):
+    """
+    Delete Recipe
+    """
+    model = Recipe
+    template_name = 'recipe_delete.html'
+    success_url = reverse_lazy('home')
+
+

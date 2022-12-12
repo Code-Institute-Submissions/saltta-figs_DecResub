@@ -129,4 +129,19 @@
     </div>
 </div>
 
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-6">
+            {% if request.user == recipe.author %}
+            <h5>Manage your recipe:</h5>
+            <strong>{{ recipe.author }}</strong> - {{ recipe.title }}
+            <p class="edit-delete"><a href="{% url 'recipe_edit' recipe.slug %}"><button
+                        class="btn btn-success edit-recipe"><i class="fa fa-edit"></i> | Edit</button></i></a>
+                <a href="{% url 'recipe_delete' recipe.slug %}"><button class="btn btn-danger"><i
+                            class="fa fa-trash"></i> | Delete</button></a></p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
 {% endblock content %}
