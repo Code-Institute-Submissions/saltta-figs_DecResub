@@ -114,7 +114,9 @@ class RecipeEditView(UpdateView):
     form_class = RecipeForm
     template_name_suffix = '_update_form'
     template_name = 'recipe_update_form.html'
-    success_url = '/'
+    
+    def get_success_url(self):
+        return reverse_lazy('recipe_detail', kwargs={'slug': self.object.slug})
 
 
 # deletes recipe
