@@ -292,10 +292,27 @@ Once submitted, the comment still needs approval by the admin. The user will be 
 
 ![waiting approval](./media/commentapproval.png)
 
+### Edit and Delete
+
+Buttons at the bottom of the recipe page allow the author to edit or delete their recipe when logged in.
+
+![edit and delete buttons](./media/editdeletebtn.jpg)
+
+### Edit Page
+
+This page allows the author to modify and updated their recipe.
+
+![edit recipe page](./media/updatepage.jpg)
+
+### Delete Page
+
+This page allows the author to completely remove their recipe from the website.
+
+![delete recipe](./media/deletepage.jpg)
+
 ### Future Features
 
 - Create user profile pages
-- Allow users to share recipes
 - Allow users to save their favorite recipes to their profile
 - Switch from blog to a more social community website
 
@@ -343,6 +360,7 @@ All tests were performed on Desktop and Mobile devices.
 - Comments display
 - Comment box visibility only logged in
 - Message of awaiting approval after comment submission
+- Edit and Delete buttons
 
 **Registration**
 
@@ -367,6 +385,20 @@ All tests were performed on Desktop and Mobile devices.
 - Logout button works
 - Redirects to home page with temporary message below navbar
 
+**Delete**
+
+- Delete recipe page layout
+- Back to recipe button works
+- Delete button works
+- Redirects to home page upon deletion
+
+**Edit**
+
+- Edit recipe page layout
+- Back to recipe button works
+- Update recipe button works
+- Redirects to updated recipe page
+
 **Browser**
 
 - Chrome
@@ -385,7 +417,7 @@ And mobile version of the site:
 
 ### Bugs
 
-Could not get Add Recipe to work.
+Could not get Add Recipe to work. - FIXED (typo)
 
 Most bugs were typing errors that were immediately corrected. The most difficult part to me was navigating Bootstrap and my own CSS file. 
 
@@ -450,6 +482,9 @@ Heroku is used to deploy the website. [The Figs](https://thefigs.herokuapp.com/)
 5. Access your dashboard on Cloudinary
 
 ### Deploying to Heroku
+
+HEROKU HAS CHANGED ITS POLICIES AND IS NO LONGER FREE
+
 
 1. Create an account on [Heroku](https://www.heroku.com/)
 2. Create an app, in my case *thefigs* and select a region
