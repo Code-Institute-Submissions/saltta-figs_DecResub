@@ -9,12 +9,12 @@
     {% if request.user == recipe.author %}
     <div class="row mt-5">
         <div class="col-md-3 col-sm-6">
-            <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-light">Back to Feed</a>
+            <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-signup">Back to Recipe</a>
         </div>
     </div>
     <div class="row justify-content-center mt-5">
         <div class="col-md-5 col-sm-12">
-            <h5>Update Your Post</h5>
+            <h5>Update Your Recipe</h5>
         </div>
     </div>
     <div class="row justify-content-center mt-3 mb-5">
@@ -23,7 +23,7 @@
                 {% csrf_token %}
                 {{ form | crispy }}
                 <div class="d-grid gap-2">
-                    <input type="submit" class="btn btn-success mt-3" value="Submit">
+                    <input type="submit" class="btn btn-signup mt-3" value="Update">
                 </div>
             </form>
         </div>
