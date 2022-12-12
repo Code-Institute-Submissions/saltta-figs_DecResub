@@ -12,6 +12,7 @@ from .models import Recipe
 from .forms import CommentForm, RecipeForm
 import datetime
 
+
 class AddRecipe(SuccessMessageMixin, LoginRequiredMixin, CreateView):
 
     model = Recipe
@@ -29,6 +30,7 @@ class AddRecipe(SuccessMessageMixin, LoginRequiredMixin, CreateView):
         initial = super().get_initial(**kwargs)
         initial['author'] = self.request.user
         return initial
+
 
 # view for the recipe list
 class RecipeList(generic.ListView):

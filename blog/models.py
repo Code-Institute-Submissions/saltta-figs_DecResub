@@ -5,6 +5,7 @@ from autoslug import AutoSlugField
 
 STATUS = ((0, 'Draft'), (1, 'Published'))
 
+
 # Makes a usable model for recipe creation for the blog
 class Recipe(models.Model):
     title = models.CharField(max_length=250, unique=True)
@@ -28,6 +29,7 @@ class Recipe(models.Model):
 
     def number_of_likes(self):
         return self.likes.count()
+
 
 # usable model for comment creation
 class Comment(models.Model):

@@ -5,12 +5,12 @@ from cloudinary.models import CloudinaryField
 from .models import Comment, Recipe
 
 
-
 # form for comments
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ('body',)
+
 
 class RecipeForm(forms.ModelForm):
     class Meta:
