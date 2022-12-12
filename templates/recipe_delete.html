@@ -9,17 +9,17 @@
     {% if request.user == recipe.author %}
     <div class="row mt-5">
         <div class="col-md-3 col-sm-6">
-            <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-light">Back to Feed</a>
+            <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-signup">Back to Recipe</a>
         </div>
     </div>
     <div class="row justify-content-center mt-5">
         <div class="col-md-5 col-sm-12">
             <h5>Are You Sure?</h5>
-            <p>You are about to delete this post, this cannot be undone.</p>
+            <p>You are about to delete this recipe, this cannot be undone.</p>
         <form method="POST">
             {% csrf_token %}
             <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-danger">Delete</button>
+                <button type="submit" class="btn btn-danger">Delete Recipe</button>
             </div>
         </form>
         </div>
